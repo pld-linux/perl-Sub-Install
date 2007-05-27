@@ -9,7 +9,7 @@ Summary:	Sub::Install - install subroutines into packages easily
 #Summary(pl):
 Name:		perl-Sub-Install
 Version:	0.924
-Release:	0.1
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -26,7 +26,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module makes it easy to install subroutines into packages without
 the unslightly mess of no strict or typeglobs lying about where just
 anyone can see them.
-
 
 
 # %description -l pl # TODO
