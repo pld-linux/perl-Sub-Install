@@ -6,19 +6,18 @@
 %define	pdir	Sub
 %define	pnam	Install
 Summary:	Sub::Install - install subroutines into packages easily
-#Summary(pl):
+Summary(pl.UTF-8):	Sub::Install - łatwe instalowanie podprocedur do pakietów
 Name:		perl-Sub-Install
 Version:	0.924
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	eae66cb5cbd2064ae02b3aeacf6338e4
+URL:		http://search.cpan.org/dist/Sub-Install/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-%if %{with tests}
-%endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,8 +26,10 @@ This module makes it easy to install subroutines into packages without
 the unslightly mess of no strict or typeglobs lying about where just
 anyone can see them.
 
-
-# %description -l pl # TODO
+%description -l pl.UTF-8
+Ten moduł ułatwia instalowanie podprocedur do pakietów bez niemałego
+bałaganu no strict lub typeglobów umieszczonych wszędzie, gdzie każdy
+może je zobaczyć.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -53,5 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Sub/*.pm
-#%%{perl_vendorlib}/Sub/Install
 %{_mandir}/man3/*
