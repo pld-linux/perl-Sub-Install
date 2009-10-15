@@ -8,13 +8,13 @@
 Summary:	Sub::Install - install subroutines into packages easily
 Summary(pl.UTF-8):	Sub::Install - łatwe instalowanie podprocedur do pakietów
 Name:		perl-Sub-Install
-Version:	0.924
+Version:	0.925
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	eae66cb5cbd2064ae02b3aeacf6338e4
+# Source0-md5:	694aaec771c42280746a9a6279683263
 URL:		http://search.cpan.org/dist/Sub-Install/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
