@@ -1,21 +1,21 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define	pdir	Sub
 %define	pnam	Install
 Summary:	Sub::Install - install subroutines into packages easily
 Summary(pl.UTF-8):	Sub::Install - łatwe instalowanie podprocedur do pakietów
 Name:		perl-Sub-Install
-Version:	0.928
+Version:	0.929
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	e1ce4f9cb6b2f6b8778b036c31afa5ab
-URL:		https://metacpan.org/release/Sub-Install
-BuildRequires:	perl-ExtUtils-MakeMaker >= 6.30
+Source0:	https://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	81baf186c62c71f0935c3ccf1c5964c8
+URL:		https://metacpan.org/dist/Sub-Install
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.78
 %if %{with tests}
 BuildRequires:	perl-Test-Simple >= 0.96
 %endif
